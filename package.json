@@ -1,5 +1,5 @@
 {
-  "name": "@cliz/template-multiple-commands",
+  "name": "create-cliz",
   "version": "0.0.0",
   "description": "Cliz Multiple Commands CLI Template",
   "keywords": [
@@ -9,21 +9,20 @@
     "zodash",
     "doreamon"
   ],
-  "homepage": "https://github.com/cliz-design/template-multiple-commands#readme",
+  "homepage": "https://github.com/cliz-design/create-cliz#readme",
   "bugs": {
-    "url": "https://github.com/cliz-design/template-multiple-commands/issues"
+    "url": "https://github.com/cliz-design/create-cliz/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cliz-design/template-multiple-commands.git"
+    "url": "git+https://github.com/cliz-design/create-cliz.git"
   },
   "license": "MIT",
   "author": "Zero <tobewhatwewant@gmail.com>",
   "main": "lib/cli.js",
   "typings": "lib/cli.d.ts",
   "bin": {
-    "cliz-template-multiple-commands": "lib/cli.js",
-    "template-multiple-commands": "lib/cli.js"
+    "create-cliz": "lib/cli.js"
   },
   "directories": {
     "lib": "lib"
@@ -76,13 +75,16 @@
     "preset": "ts-jest"
   },
   "dependencies": {
-    "@cliz/cli": "^1.0.9"
+    "@cliz/cli": "^1.0.11",
+    "boxen": "v5",
+    "listr": "^0.14.3"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
     "@types/git-url-parse": "^9.0.1",
     "@types/jest": "^27.4.1",
+    "@types/listr": "^0.14.4",
     "@types/node": "^17.0.23",
     "@typescript-eslint/eslint-plugin": "^5.18.0",
     "@typescript-eslint/parser": "^5.18.0",
@@ -122,6 +124,6 @@
     }
   },
   "cliz": {
-    "name": "template-multiple-commands"
+    "name": "create-cliz"
   }
 }
