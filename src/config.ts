@@ -21,7 +21,7 @@ export class CLIConfig {
   }
 
   public get templateURL() {
-    return `https://github.com/cliz-design/${this.template}.git`;
+    return `https://github.com/cliz-design/${this.template}`;
   }
 
   public get packageName() {

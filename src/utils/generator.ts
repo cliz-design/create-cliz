@@ -81,14 +81,14 @@ export async function generate(options: GeneratorConfig) {
 
   const tasks = new Listr([
     {
-      title: 'Clone project',
+      title: 'Load template ...',
       task: async () => {
         await doreamon.delay(1000);
         await generator.clone();
       },
     },
     {
-      title: 'Apply config',
+      title: 'Apply config ...',
       task: async () => {
         await doreamon.delay(1000);
         await generator.changeConfig();
@@ -102,7 +102,7 @@ export async function generate(options: GeneratorConfig) {
     //   },
     // },
     {
-      title: 'Copy project path',
+      title: 'Copy project path ...',
       task: async () => {
         await doreamon.delay(1000);
         await generator.copyProjectPath();
