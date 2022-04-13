@@ -36,6 +36,7 @@ export class Generator {
     const { config } = this;
     const pkg = await api.fs.json.read(`${config.projectPath}/package.json`);
 
+    pkg.version = '0.0.0';
     pkg.name = config.packageName;
     pkg.description = config.description;
     pkg.author = config.author;
