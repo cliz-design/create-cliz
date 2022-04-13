@@ -133,11 +133,11 @@ export async function create(options?: CreateOptions) {
   await generate(config.toJSON());
 
   const message = `
-    ${api.color.chalk.green('Every thing is ready!')}
+    ${api.color.chalk.green('Everything is ready!')}
     
     Project path(${api.color.chalk.cyan(
-    config.projectPath,
-  )}) (${api.color.chalk.grey('copied to clipboard')})
+      config.projectPath,
+    )}) (${api.color.chalk.grey('copied to clipboard')})
     - cd ${api.color.chalk.cyan(config.projectPath)}
 
     Available commands:

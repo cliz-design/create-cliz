@@ -1,5 +1,4 @@
 import { api, doreamon } from '@cliz/cli';
-import * as Listr from 'listr';
 
 export interface GeneratorConfig {
   name: string;
@@ -79,7 +78,7 @@ export class Generator {
 export async function generate(options: GeneratorConfig) {
   const generator = new Generator(options);
 
-  const tasks = new Listr([
+  api.task.add(
     {
       title: 'Load template ...',
       task: async () => {
@@ -108,7 +107,7 @@ export async function generate(options: GeneratorConfig) {
         await generator.copyProjectPath();
       },
     },
-  ]);
+  );
 
-  await tasks.run();
+  await api.task.run();
 }
