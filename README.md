@@ -1,9 +1,9 @@
-# Multiple Commands CLI Template
+# Cliz Generator
 
 ## Usage
 
 ```bash
-# @TODO
+yarn create cliz
 ```
 
 ## License
