@@ -49,8 +49,8 @@ export async function create(options?: CreateOptions) {
           return 'CLI 名称长度不能小于 2 个字符！';
         }
 
-        if (input.length > 20) {
-          return 'CLI 名称长度不能大于 20 个字符！';
+        if (input.length > 50) {
+          return 'CLI 名称长度不能大于 50 个字符！';
         }
 
         if (!/^[a-zA-Z0-9_]+$/.test(input)) {
@@ -76,8 +76,8 @@ export async function create(options?: CreateOptions) {
         if (input.length < 2) {
           return 'CLI 描述长度不能小于 2 个字符！';
         }
-        if (input.length > 100) {
-          return 'CLI 描述长度不能大于 100 个字符！';
+        if (input.length > 512) {
+          return 'CLI 描述长度不能大于 512 个字符！';
         }
         return true;
       },
@@ -94,8 +94,8 @@ export async function create(options?: CreateOptions) {
         if (input.length < 2) {
           return '作者长度不能小于 2 个字符！';
         }
-        if (input.length > 20) {
-          return '作者长度不能大于 20 个字符！';
+        if (input.length > 100) {
+          return '作者长度不能大于 100 个字符！';
         }
         return true;
       },
@@ -136,8 +136,8 @@ export async function create(options?: CreateOptions) {
     ${api.color.chalk.green('Every thing is ready!')}
     
     Project path(${api.color.chalk.cyan(
-      config.projectPath,
-    )}) (${api.color.chalk.grey('copied to clipboard')})
+    config.projectPath,
+  )}) (${api.color.chalk.grey('copied to clipboard')})
     - cd ${api.color.chalk.cyan(config.projectPath)}
 
     Available commands:
