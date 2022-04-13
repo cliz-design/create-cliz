@@ -25,6 +25,9 @@ export class Generator {
     const { config } = this;
     // await api.$.runShell(`git clone --progress ${config.templateURL} ${config.projectPath}`);
     await api.$`git clone ${config.templateURL} ${config.projectPath}`;
+    //
+    await api.fs.rmdir(`${config.projectPath}/.git`);
+    //
   }
 
   public async changeConfig() {
