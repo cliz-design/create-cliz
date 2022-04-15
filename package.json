@@ -75,7 +75,7 @@
     "preset": "ts-jest"
   },
   "dependencies": {
-    "@cliz/cli": "^1.0.15",
+    "@cliz/cli": "^1.0.16",
     "boxen": "v5"
   },
   "devDependencies": {

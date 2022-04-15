@@ -319,13 +319,13 @@
     winston "3.2.1"
     wrap-ansi "^6.2.0"
 
-"@cliz/cli@^1.0.15":
-  version "1.0.15"
-  resolved "https://registry.yarnpkg.com/@cliz/cli/-/cli-1.0.15.tgz#4117f01f63d641f0b01cdd8dc44b96d429d8cd3f"
-  integrity sha512-cqrrvnmHfyZ36fg5Blty/Zmh8aNRBDYba+jC3IUke7BaHrYYftyNHjbi/Zbli84nTX7GFwOGyWGEiZL0Drzg2w==
+"@cliz/cli@^1.0.16":
+  version "1.0.16"
+  resolved "https://registry.yarnpkg.com/@cliz/cli/-/cli-1.0.16.tgz#abff12b2fc4514a67316c6240269a0af305eb54f"
+  integrity sha512-oHOMk7Rm85OktzVyckpBSxpU3xibWlKEiQlOO2KbCGh/dQHKVWX8K+7t00a5dwonwtmt8qo83cZh/Le3rYPBzg==
   dependencies:
     "@caporal/core" "^2.0.2"
-    "@cliz/core" "^1.0.9"
+    "@cliz/core" "^1.0.10"
     "@types/inquirer" "^8.1.3"
     "@types/update-notifier" "^5.1.0"
     "@zodash/doreamon" "^1.0.6"
@@ -333,17 +333,19 @@
     inquirer "^8.2.0"
     update-notifier "^5.1.0"
 
-"@cliz/core@^1.0.9":
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/@cliz/core/-/core-1.0.9.tgz#9896fb1ca3f690d5be0f2a373a07c33091c4da09"
-  integrity sha512-ILVF1o2AeK+hkp1MMZFKPJ7uPWe9P+nxSQ2hXuo5K/JG2CAkMG3M0YMiEJaFtMu9SU2N+uI8NP47611kgqzmcg==
+"@cliz/core@^1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@cliz/core/-/core-1.0.10.tgz#93765c2c23dba08d9b5732c65b5f1c6f1cd1b1eb"
+  integrity sha512-JvCxqcdYT9bG33xCEnol8cva1rikGlN38nEWEQ9xJp+PMZxjhrjrIwhyt8zHmaRlz7JgSkAR1z4y1Uokq/RVaA==
   dependencies:
     "@types/listr" "^0.14.4"
     "@zcorky/fz" "^1.2.15"
     "@znode/clipboard" "^0.0.4"
-    "@znode/config" "^0.0.14"
+    "@znode/config" "^0.0.15"
     "@znode/execa" "^0.2.3"
-    "@znode/fs" "^0.1.22"
+    "@znode/fs" "^1.0.1"
+    "@znode/node-info" "^0.0.14"
+    "@znode/os-info" "^0.0.2"
     "@zodash/debounce" "^0.0.20"
     "@zodash/timeout" "^0.0.7"
     boxen "^4.2.0"
@@ -1204,13 +1206,13 @@
   dependencies:
     clipboardy "^2.3.0"
 
-"@znode/config@^0.0.14":
-  version "0.0.14"
-  resolved "https://registry.yarnpkg.com/@znode/config/-/config-0.0.14.tgz#0af5f9c3f4053cd72a0c322f9c7131b963065464"
-  integrity sha512-ACElvcQelWgrwqBeGWMVXend5k3Aw8HIFAXIOyzJ7MeLU4a2tyo3CttQdxkNbP98jcejhwQ6u0Vu7tns1wnS3A==
+"@znode/config@^0.0.15":
+  version "0.0.15"
+  resolved "https://registry.yarnpkg.com/@znode/config/-/config-0.0.15.tgz#b39f52ecdc770b5bfc5d38ba7680282b8b4fa56b"
+  integrity sha512-23QPSEgSoOV7aT/ITr3W2GBGyWn0frmFdNbhHp9/BpWsYkLLWft/f3gYgTLtlChaR1qva8XIHzVpkKCc7C/dGg==
   dependencies:
     "@znode/dotenv" "^0.0.10"
-    "@znode/fs" "^0.1.22"
+    "@znode/fs" "^1.0.2"
 
 "@znode/dotenv@^0.0.10":
   version "0.0.10"
@@ -1256,6 +1258,38 @@
     rimraf "^3.0.2"
     toml "^3.0.0"
     tslib "^2.3.1"
+
+"@znode/fs@^1.0.1", "@znode/fs@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@znode/fs/-/fs-1.0.2.tgz#9f9e72fa099a35a66592e5b5effbe017d8c15c93"
+  integrity sha512-SeuXir8rMMfRK7zOqsY0Cm9SezB3irAzpF/Y0BmgmrB11C+Ov8Y16SQt9pCvgJZzACkVxpsBdfvZSluq1nv2TA==
+  dependencies:
+    "@types/ini" "^1.3.30"
+    "@zodash/doreamon" "^1.0.2"
+    "@zodash/map" "^1.1.7"
+    "@zodash/zip" "^0.1.6"
+    axios "^0.21.1"
+    chokidar "^3.5.2"
+    fast-xml-parser "^3.19.0"
+    ini "^2.0.0"
+    js-yaml "^4.1.0"
+    mkdirp "^1.0.4"
+    pump "^3.0.0"
+    rimraf "^3.0.2"
+    toml "^3.0.0"
+    tslib "^2.3.1"
+
+"@znode/node-info@^0.0.14":
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/@znode/node-info/-/node-info-0.0.14.tgz#f892d36770a1d3e79ae060d4e60015e52775caa1"
+  integrity sha512-MYr6095xcecpZx7qTzMw/7trxG7mOfgHzaOf409+OWfWMp/yvps3gv7IniCMrXl9KpKNoKXcNzCDjSL4jg0FNA==
+  dependencies:
+    "@znode/execa" "^0.2.3"
+
+"@znode/os-info@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@znode/os-info/-/os-info-0.0.2.tgz#bf6bcc9dbb4d85ae4121e0580ef3a29417632474"
+  integrity sha512-q3nvgpKMn3a99VuMNQlusbPi7gOo7FWhOXXeYJR7a9Vim1CeFhyi51PUPTU2AaFAtBtVDn5Dqh/P5ekifrFNBw==
 
 "@zodash/cache@^0.0.6":
   version "0.0.6"
