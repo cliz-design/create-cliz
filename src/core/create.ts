@@ -135,24 +135,15 @@ export async function create(options?: CreateOptions) {
   const message = `
     ${api.color.chalk.green('Everything is ready!')}
     
-    Project path(${api.color.chalk.cyan(
-      config.projectPath,
-    )}) (${api.color.chalk.grey('copied to clipboard')})
+    Project path(${api.color.chalk.cyan(config.projectPath)}) (${api.color.chalk.grey('copied to clipboard')})
     - cd ${api.color.chalk.cyan(config.projectPath)}
 
     Available commands:
-    - ${api.color.chalk.bold('Bootstrap  ')}:         ${api.color.chalk.cyan(
-    'yarn bootstrap',
-  )}
-    - ${api.color.chalk.bold('Dev        ')}:         ${api.color.chalk.cyan(
-    'yarn dev',
-  )}
-    - ${api.color.chalk.bold('CLI        ')}:         ${api.color.chalk.cyan(
-    'yarn cli',
-  )}
-    - ${api.color.chalk.bold('Build      ')}:         ${api.color.chalk.cyan(
-    'yarn build',
-  )}
+    - ${api.color.chalk.bold('Bootstrap              ')}:         ${api.color.chalk.cyan('yarn bootstrap')}
+    - ${api.color.chalk.bold('Dev                    ')}:         ${api.color.chalk.cyan('yarn dev')}
+    - ${api.color.chalk.bold('CLI                    ')}:         ${api.color.chalk.cyan('yarn cli')}
+    - ${api.color.chalk.bold('Build                  ')}:         ${api.color.chalk.cyan('yarn build')}
+    - ${api.color.chalk.bold('Register to global     ')}:         ${api.color.chalk.cyan('yarn register')}
       `;
 
   console.log(
