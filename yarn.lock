@@ -319,24 +319,10 @@
     winston "3.2.1"
     wrap-ansi "^6.2.0"
 
-"@cliz/cli@^1.0.16":
-  version "1.0.16"
-  resolved "https://registry.yarnpkg.com/@cliz/cli/-/cli-1.0.16.tgz#abff12b2fc4514a67316c6240269a0af305eb54f"
-  integrity sha512-oHOMk7Rm85OktzVyckpBSxpU3xibWlKEiQlOO2KbCGh/dQHKVWX8K+7t00a5dwonwtmt8qo83cZh/Le3rYPBzg==
-  dependencies:
-    "@caporal/core" "^2.0.2"
-    "@cliz/core" "^1.0.10"
-    "@types/inquirer" "^8.1.3"
-    "@types/update-notifier" "^5.1.0"
-    "@zodash/doreamon" "^1.0.6"
-    "@zodash/logger" "^0.2.30"
-    inquirer "^8.2.0"
-    update-notifier "^5.1.0"
-
-"@cliz/core@^1.0.10":
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/@cliz/core/-/core-1.0.10.tgz#93765c2c23dba08d9b5732c65b5f1c6f1cd1b1eb"
-  integrity sha512-JvCxqcdYT9bG33xCEnol8cva1rikGlN38nEWEQ9xJp+PMZxjhrjrIwhyt8zHmaRlz7JgSkAR1z4y1Uokq/RVaA==
+"@cliz/api@^1.0.11":
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/@cliz/api/-/api-1.0.11.tgz#905d864d10e56353597a911be22cb9718803f589"
+  integrity sha512-sWHds+/UDGAkm89vJW0DOSgbwApDW6IQLOQWOL9/5+QW8ZlDFrS4Rz+xxUOLwGGSVglimDRtuOUr9RxvqoRfSw==
   dependencies:
     "@types/listr" "^0.14.4"
     "@zcorky/fz" "^1.2.15"
@@ -354,6 +340,27 @@
     listr "^0.14.3"
     ora "^4.0.4"
     pretty-ms "^7.0.1"
+
+"@cliz/cli@^1.0.19":
+  version "1.0.19"
+  resolved "https://registry.yarnpkg.com/@cliz/cli/-/cli-1.0.19.tgz#81c4bcdb598ac3de43bc0c434ab1026fc5e64f75"
+  integrity sha512-Gu9I1Q11LOfgjBs32JwBxwSOJB+wwGB31UXlbJ1UG4ygOMYRGNFeUmtS4MJ71SZaVRZ5RAVke+JYTq9DVx/YKg==
+  dependencies:
+    "@cliz/core" "^1.0.17"
+
+"@cliz/core@^1.0.17":
+  version "1.0.17"
+  resolved "https://registry.yarnpkg.com/@cliz/core/-/core-1.0.17.tgz#53fa76cbba5ba36dd0dfaff4b6f131bee3cc8a93"
+  integrity sha512-mdIExty8+CG28sRbrcKC/nWs3iitH9zsaipRH36CpE5V8J2CeQQZAmAkGD4BMhZ5NM5FW5HSsvsPxYeeax7P2A==
+  dependencies:
+    "@caporal/core" "^2.0.2"
+    "@cliz/api" "^1.0.11"
+    "@types/inquirer" "^8.1.3"
+    "@types/update-notifier" "^5.1.0"
+    "@zodash/doreamon" "^1.0.6"
+    "@zodash/logger" "^0.2.30"
+    inquirer "^8.2.0"
+    update-notifier "^5.1.0"
 
 "@colors/colors@1.5.0":
   version "1.5.0"
